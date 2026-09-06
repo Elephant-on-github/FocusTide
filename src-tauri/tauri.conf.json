@@ -12,11 +12,15 @@
     "windows": [
       {
         "title": "FocusTide",
-        "width": 480,
-        "height": 720,
+        "width": 800,
+        "height": 600,
+        "minWidth": 300,
+        "minHeight": 300,
         "resizable": true,
         "fullscreen": false,
-        "decorations": true
+        "decorations": true,
+        "browserExtensionsEnabled": false,
+        "additionalBrowserArgs": "--disable-extensions --disable-background-networking --disable-default-apps --disable-sync --disable-translate --metrics-recording-only --no-first-run --safebrowsing-disable-auto-update --disable-renderer-backgrounding --disable-backgrounding-occluded-windows --js-flags=--scavenger_max_new_space_capacity_mb=8 --disable-features=msSmartScreenProtection,msWebView2EnableTrackingPrevention"
       }
     ],
     "security": {
