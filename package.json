@@ -20,7 +20,11 @@
     "release": "standard-version",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
-    "tauri:build": "tauri build"
+    "tauri:build": "tauri build",
+    "build:windows": "cargo tauri build --target x86_64-pc-windows-msvc",
+    "build:linux": "cargo tauri build --target x86_64-unknown-linux-gnu",
+    "build:macos": "cargo tauri build --target universal-apple-darwin",
+    "build:all": "cargo tauri build"
   },
   "dependencies": {
     "@tabler/icons-vue": "^3.16.0",
