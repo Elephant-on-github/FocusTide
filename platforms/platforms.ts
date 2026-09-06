@@ -1,4 +1,5 @@
 export enum AppPlatform {
   web = 'web',
-  mobile = 'mobile'
+  mobile = 'mobile',
+  desktop = 'desktop'
 }

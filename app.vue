@@ -8,6 +8,7 @@ import { useSettings } from '~~/stores/settings'
 import { useTicker } from '~~/components/ticker'
 import { useWeb } from '~~/platforms/web'
 import { useMobile } from '~~/platforms/mobile'
+import { useDesktop } from '~~/platforms/desktop'
 
 import TimerSwitch from '@/components/timer/display/_timerSwitch.vue'
 import TimerProgress from '@/components/timer/timerProgress.vue'
@@ -93,6 +94,8 @@ if (runtimeConfig.public.PLATFORM === AppPlatform.web) {
   useWeb()
 } else if (runtimeConfig.public.PLATFORM === AppPlatform.mobile) {
   useMobile()
+} else if (runtimeConfig.public.PLATFORM === AppPlatform.desktop) {
+  useDesktop()
 }
 
 const state = reactive({
