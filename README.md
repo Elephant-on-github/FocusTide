@@ -87,7 +87,7 @@ This is an open-source project that welcomes contributions. Please check the [**
 * [**Tailwind CSS**](https://tailwindcss.com/)
 * [Tabler Icons](https://tabler-icons.io/)
 * [Workbox](https://github.com/GoogleChrome/workbox) as a PWA service worker
-* [`conventional-changelog/standard-version`](https://github.com/conventional-changelog/standard-version) for automatic changelog generation from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+* [**release-please**](https://github.com/googleapis/release-please) for automatic changelog generation from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ### 🛠 Building or running the app yourself
 
