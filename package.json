@@ -17,7 +17,10 @@
     "release-patch": "standard-version --release-as patch && git push --follow-tags",
     "release-minor": "standard-version --release-as minor && git push --follow-tags",
     "release-major": "standard-version --release-as major && git push --follow-tags",
-    "release": "standard-version"
+    "release": "standard-version",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
   },
   "dependencies": {
     "@tabler/icons-vue": "^3.16.0",

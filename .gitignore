@@ -96,3 +96,6 @@ sw.*
 
 # Build output of modules
 .build
+
+# Tauri
+src-tauri/target/
