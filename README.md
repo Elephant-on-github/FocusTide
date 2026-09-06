@@ -102,6 +102,43 @@ $ yarn dev
 $ yarn generate
 ```
 
+## 🖥 Desktop App
+
+FocusTide is also available as a native desktop application built with [Tauri](https://tauri.app/). The executable is under 10 MB.
+
+### Prerequisites
+
+* [Rust](https://www.rust-lang.org/tools/install) (latest stable)
+* [Node.js](https://nodejs.org/) v18+
+* [Yarn](https://yarnpkg.com/) v4+
+
+### Build from source
+
+```bash
+# install frontend dependencies
+yarn install
+
+# build the desktop app for your platform
+cargo tauri build
+```
+
+The output binaries are located in `src-tauri/target/release/bundle/`:
+
+| Platform | Formats |
+|----------|---------|
+| Windows  | `.msi`, `.exe` |
+| Linux    | `.AppImage`, `.deb` |
+| macOS    | `.app`, `.dmg` |
+
+### Cross-platform builds
+
+```bash
+yarn build:windows   # Windows
+yarn build:linux     # Linux
+yarn build:macos     # macOS (universal binary)
+yarn build:all       # Default platform
+```
+
 ## ☕ Support the project
 
 If you like this project or it has helped you, please consider buying the maintainer a coffee. You won't be annoyed to do so while using the app!
