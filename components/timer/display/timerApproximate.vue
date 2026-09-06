@@ -29,7 +29,7 @@ const time = computed(() => {
 </script>
 
 <template>
-  <div :class="['timer-display select-none flex flex-col md:flex-row gap-2 items-center leading-none text-9xl xl:text-[12rem]', { 'active': running }]">
+  <div :class="['timer-display select-none flex flex-col md:flex-row gap-2 items-center leading-none', { 'active': running }]">
     <div class="flex flex-row">
       <transition name="transition-approximate-up">
         <div v-show="time.value < 0" class="-mr-2 font-bold">
@@ -51,6 +51,10 @@ const time = computed(() => {
 </template>
 
 <style lang="scss" scoped>
+.timer-display {
+  font-size: clamp(2.5rem, 10vw, 9rem);
+}
+
 div.time-value {
   width: calc(var(--ch) * 1ch);
 }

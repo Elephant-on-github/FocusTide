@@ -21,15 +21,23 @@ const timerValue = computed(() => {
       <span
         :key="timerValue"
         :style="{ 'width': `${Math.max(1, Math.ceil(Math.log10(timerValue + 1)))}ch` }"
-        class="relative inline-block text-9xl md:text-[14rem] font-bold"
+        class="relative inline-block font-bold timer-percentage-number"
         v-text="timerValue"
       />
     </transition>
-    <span class="text-4xl md:text-8xl">%</span>
+    <span class="timer-percentage-sign">%</span>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.timer-percentage-number {
+  font-size: clamp(2.5rem, 10vw, 9rem);
+}
+
+.timer-percentage-sign {
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+
 .transition-percentage-enter-active,
 .transition-percentage-leave-active {
   transition: 300ms ease-out;

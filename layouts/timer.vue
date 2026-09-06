@@ -47,4 +47,9 @@ useHead(() => {
 html, body, #__nuxt {
   height: 100%;
 }
+
+/* Viewport-responsive base: everything using rem scales proportionally */
+html {
+  font-size: clamp(10px, 1.8vw, 16px);
+}
 </style>

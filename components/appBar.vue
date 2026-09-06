@@ -13,7 +13,7 @@ const settingsStore = useSettings()
 </script>
 
 <template>
-  <div class="flex flex-row items-center w-full gap-2 px-4 my-1 isolate h-14">
+  <div class="flex flex-row items-center w-full gap-1 px-2 md:gap-2 md:px-4 my-1 isolate h-10 md:h-14">
     <div v-show="settingsStore.schedule.visibility.enabled" class="flex-shrink-0 h-10 px-2 py-2 rounded-full bg-surface-dark dark:ring-1 ring-inset dark:ring-surface-ondark dark:ring-opacity-20 overflow-hidden">
       <ClientOnly>
         <ScheduleView />
@@ -26,14 +26,14 @@ const settingsStore = useSettings()
       circle
       :theme="openPanels.todo ? ButtonTheme.Primary : ButtonTheme.Neutral"
       :importance="ButtonImportance.Tonal"
-      class="transition rounded-full h-11"
+      class="transition rounded-full h-9 md:h-11"
       no-content-theme
       no-padding
       inner-class="p-1"
       :aria-label="$t('appbar.todo')"
       @click="openPanels.todo = !openPanels.todo"
     >
-      <IconChecklist size="24" class="inline-block" />
+      <IconChecklist class="w-5 h-5 md:w-6 md:h-6 inline-block" />
     </CButton>
     <CButton
       circle
@@ -46,7 +46,7 @@ const settingsStore = useSettings()
       inner-class="p-1"
       @click="openPanels.settings = !openPanels.settings"
     >
-      <IconSettings size="24" class="inline-block" />
+      <IconSettings class="w-5 h-5 md:w-6 md:h-6 inline-block" />
     </CButton>
   </div>
 </template>

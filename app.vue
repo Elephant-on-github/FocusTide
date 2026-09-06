@@ -157,7 +157,7 @@ const progressBarSchedules = computed(() => {
           class="flex-grow"
           @tick="state.timeString = $event"
         />
-        <TimerControls class="mb-8" />
+        <TimerControls class="mb-4 md:mb-8" />
       </div>
       <client-only>
         <TutorialView />

@@ -38,7 +38,7 @@ const timeLeftStructured = computed(() => {
 
 <template>
   <div
-    :class="['md:text-[14rem] text-[9rem] leading-none timer-display relative', { 'active': running }]"
+    :class="['timer-display relative', { 'active': running }]"
   >
     <transition-group
       name="transition-traditional"
@@ -72,3 +72,10 @@ const timeLeftStructured = computed(() => {
     </transition-group>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.timer-display {
+  font-size: clamp(2.5rem, 10vw, 9rem);
+  line-height: 1;
+}
+</style>

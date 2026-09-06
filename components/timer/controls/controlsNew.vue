@@ -36,7 +36,7 @@ const advance = () => {
       :aria-label="$t('controls.stop')"
       @click="reset"
     >
-      <IconPlayerStop :size="24" />
+      <IconPlayerStop class="w-5 h-5 md:w-6 md:h-6" />
     </CButton>
 
     <CButton
@@ -48,8 +48,8 @@ const advance = () => {
       :importance="ButtonImportance.Filled"
       @click="playPause"
     >
-      <IconPlayerPlay v-if="scheduleStore.timerState !== TimerState.RUNNING" :size="28" />
-      <IconPlayerPause v-else :size="28" />
+      <IconPlayerPlay v-if="scheduleStore.timerState !== TimerState.RUNNING" class="w-6 h-6 md:w-7 md:h-7" />
+      <IconPlayerPause v-else class="w-6 h-6 md:w-7 md:h-7" />
     </CButton>
 
     <CButton
@@ -62,7 +62,7 @@ const advance = () => {
       :class="{ 'scale-0 opacity-0 pointer-events-none' : scheduleStore.timerState === TimerState.RUNNING }"
       @click="advance()"
     >
-      <IconPlayerTrackNext :size="24" />
+      <IconPlayerTrackNext class="w-5 h-5 md:w-6 md:h-6" />
     </CButton>
   </div>
 </template>
