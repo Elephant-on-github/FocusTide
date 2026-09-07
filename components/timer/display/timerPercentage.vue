@@ -31,11 +31,11 @@ const timerValue = computed(() => {
 
 <style lang="scss" scoped>
 .timer-percentage-number {
-  font-size: clamp(2.5rem, 10vw, 9rem);
+  font-size: clamp(2.5rem, 10vmin, 9rem);
 }
 
 .timer-percentage-sign {
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 3vmin, 3rem);
 }
 
 .transition-percentage-enter-active,

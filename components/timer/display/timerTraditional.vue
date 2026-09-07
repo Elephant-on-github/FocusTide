@@ -75,7 +75,7 @@ const timeLeftStructured = computed(() => {
 
 <style lang="scss" scoped>
 .timer-display {
-  font-size: clamp(2.5rem, 10vw, 9rem);
+  font-size: clamp(2.5rem, 10vmin, 9rem);
   line-height: 1;
 }
 </style>

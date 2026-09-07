@@ -10,7 +10,7 @@ import { IconCheck as CompleteIcon } from '@tabler/icons-vue'
 
 <style lang="scss" scoped>
 .timer-complete-icon svg {
-  width: clamp(3rem, 20vw, 10rem) !important;
-  height: clamp(3rem, 20vw, 10rem) !important;
+  width: clamp(3rem, 20vmin, 10rem) !important;
+  height: clamp(3rem, 20vmin, 10rem) !important;
 }
 </style>

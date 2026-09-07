@@ -48,8 +48,9 @@ html, body, #__nuxt {
   height: 100%;
 }
 
-/* Viewport-responsive base: everything using rem scales proportionally */
+/* Window-responsive base: everything using rem scales proportionally.
+   vmin tracks the smaller of width/height so the UI always fits. */
 html {
-  font-size: clamp(10px, 1.8vw, 16px);
+  font-size: clamp(10px, 1.8vmin, 16px);
 }
 </style>
