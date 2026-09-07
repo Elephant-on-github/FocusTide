@@ -53,7 +53,7 @@ notificationsStore.updateEnabled()
           tabindex="0"
           @click="openPanels.settings = false"
         >
-          <CloseIcon size="24"  :aria-label="$t('settings.buttons.close')" />
+          <CloseIcon class="w-6 h-6" :aria-label="$t('settings.buttons.close')" />
         </ControlButton>
       </h1>
       <div class="flex-grow overflow-y-auto">
@@ -138,7 +138,7 @@ notificationsStore.updateEnabled()
             <SettingsItem :type="Control.Time" path="schedule.lengths.shortpause" :min-ms="5000" />
             <SettingsItem :type="Control.Time" path="schedule.lengths.longpause" :min-ms="5000" />
             <div class="flex flex-row items-center px-3 py-4 space-x-2 rounded-lg ring-inset ring ring-primary bg-primary/20 dark:bg-gray-700 dark:text-gray-100">
-              <InfoIcon size="24" />
+              <InfoIcon class="w-6 h-6" />
               <span v-text="$t('settings.scheduleMinTime')" />
             </div>
           </div>
@@ -177,22 +177,22 @@ notificationsStore.updateEnabled()
       <div class="flex flex-row flex-none h-20 p-4">
         <TabHeader :active="state.activeTab === 1" :text="$t('settings.tabs.main')" @click="state.activeTab = 1">
           <template #icon>
-            <TabIconGeneral size="24" role="presentation" />
+            <TabIconGeneral class="w-6 h-6" role="presentation" />
           </template>
         </TabHeader>
         <TabHeader :active="state.activeTab === 2" :text="$t('settings.tabs.timer')" @click="state.activeTab = 2">
           <template #icon>
-            <TabIconSchedule size="24" role="presentation" />
+            <TabIconSchedule class="w-6 h-6" role="presentation" />
           </template>
         </TabHeader>
         <TabHeader :active="state.activeTab === 3" :text="$t('settings.tabs.display')" @click="state.activeTab = 3">
           <template #icon>
-            <TabIconVisuals size="24" role="presentation" />
+            <TabIconVisuals class="w-6 h-6" role="presentation" />
           </template>
         </TabHeader>
         <TabHeader :active="state.activeTab === 4" :text="$t('settings.tabs.about')" @click="state.activeTab = 4">
           <template #icon>
-            <TabIconAbout size="24" role="presentation" />
+            <TabIconAbout class="w-6 h-6" role="presentation" />
           </template>
         </TabHeader>
       </div>
@@ -214,12 +214,12 @@ div.settings-tab {
 }
 
 .tab-transition-enter-from {
-  transform: translateY(10px);
+  transform: translateY(0.625em);
   opacity: 0;
 }
 
 .tab-transition-leave-to {
-  transform: translateY(-10px);
+  transform: translateY(-0.625em);
   opacity: 0;
 }
 </style>

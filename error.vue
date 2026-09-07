@@ -150,7 +150,7 @@ const actionTypeToButtonStyle = (action: ActionType): ButtonStyleMapping => {
 <template>
   <div class="flex flex-col items-center justify-center w-screen min-h-screen p-6 text-surface-ondark bg-surface-dark dark">
     <div>
-      <component :is="Icons[currentErrorType]" size="128" stroke-width="1.25" />
+      <component :is="Icons[currentErrorType]" class="w-32 h-32" stroke-width="1.25" />
     </div>
     <h1 class="mt-2 text-5xl font-bold tracking-tighter text-center uppercase" v-text="errorHeading" />
 
@@ -158,7 +158,7 @@ const actionTypeToButtonStyle = (action: ActionType): ButtonStyleMapping => {
     <div class="max-w-screen-lg mt-8 border-2 border-gray-300 rounded-lg">
       <transition name="showerror-transition" mode="out-in">
         <div v-if="!state.showError" class="flex flex-row items-center p-4 space-x-4 text-surface-ondark transition bg-surface-darkvariant cursor-pointer" role="button" @click="state.showError = true">
-          <IconShowError size="42" />
+          <IconShowError class="w-[2.625rem] h-[2.625rem]" />
           <div>
             <div class="font-bold" v-text="$t('errorpage.showError.main')" />
             <div v-text="$t('errorpage.showError.sub')" />

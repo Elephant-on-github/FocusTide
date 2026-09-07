@@ -57,14 +57,14 @@ const props = defineProps({
   },
   iconSize: {
     type: String,
-    default: '24'
+    default: 'w-6 h-6'
   }
 })
 </script>
 
 <template>
   <a :href="config[props.type].url + props.utmTags" :class="['rounded-full flex flex-row items-center transition-colors', { 'px-3 py-2 space-x-1': defaultClasses, 'bg-black hover:bg-gray-700 active:bg-gray-800 text-white': defaultColours && type === 'github', 'bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-400 text-black': defaultColours && type === 'support' }]">
-    <component :is="config[props.type].icon" :size="props.iconSize" />
+    <component :is="config[props.type].icon" :class="props.iconSize" />
     <span v-if="props.showText" v-text="config[props.type].text" />
   </a>
 </template>

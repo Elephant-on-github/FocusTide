@@ -7,7 +7,7 @@ import OnboardingPage from './onboardingPage.vue'
 <template>
   <OnboardingPage>
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.support.heading')">
-      <IconHeartHandshake :size="42" />
+      <IconHeartHandshake class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <div class="text-center" v-text="$t('tutorials.onboarding.pages.support.text')" />

@@ -2,7 +2,7 @@
   "name": "another-pomodoro",
   "description": "Free and open-source productivity timer, right from your browser. Built to be simple.",
   "version": "1.7.0-0",
-  "packageManager": "yarn@4.0.2",
+  
   "private": true,
   "scripts": {
     "build": "nuxi build",
@@ -66,3 +66,4 @@
     "workbox-build": "^7.3.0"
   }
 }
+

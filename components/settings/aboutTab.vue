@@ -12,7 +12,7 @@ const mainStore = useMain()
 
 <template>
   <div class="flex flex-col items-center">
-    <img src="/favicon.svg" width="64" height="64" class="inline-block p-2 mb-1 bg-red-200 rounded-lg">
+    <img src="/favicon.svg" class="inline-block w-16 h-16 p-2 mb-1 bg-red-200 rounded-lg">
     <div>
       <div class="inline-block text-2xl font-bold">
         FocusTide
@@ -81,7 +81,7 @@ const mainStore = useMain()
           bg-class="bg-[#1da1f2]"
           inner-class="!p-4 text-slate-50"
         >
-          <IconBrandTwitter :aria-label="$t('support.share.twitter')" size="24" />
+          <IconBrandTwitter :aria-label="$t('support.share.twitter')" class="w-6 h-6" />
         </Button>
         <Button
           link
@@ -94,7 +94,7 @@ const mainStore = useMain()
           bg-class="bg-[#1877f2]"
           inner-class="!p-4 text-slate-50"
         >
-          <IconBrandFacebook :aria-label="$t('support.share.facebook')" size="24" class="translate-x-[-1px]" />
+          <IconBrandFacebook :aria-label="$t('support.share.facebook')" class="w-6 h-6 translate-x-[-1px]" />
         </Button>
         <Button
           link
@@ -107,7 +107,7 @@ const mainStore = useMain()
           bg-class="bg-[#ff4500]"
           inner-class="!p-4 text-slate-50"
         >
-          <IconBrandReddit :aria-label="$t('support.share.reddit')" size="24" />
+          <IconBrandReddit :aria-label="$t('support.share.reddit')" class="w-6 h-6" />
         </Button>
       </div>
     </div>

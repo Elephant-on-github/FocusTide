@@ -8,7 +8,7 @@ const settingsStore = useSettings()
 <template>
   <div class="h-96 flex flex-col justify-start items-center gap-2">
     <div class="px-6 py-3 flex gap-2 text-lg flex-row justify-center items-center">
-      <IconClockPlay :size="42" />
+      <IconClockPlay class="w-[2.625rem] h-[2.625rem]" />
       Set your timer
     </div>
   </div>

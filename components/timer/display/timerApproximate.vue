@@ -67,11 +67,11 @@ div.time-value {
 
 .transition-approximate-up-enter {
   opacity: 0 !important;
-  transform: translateY(30px) !important;
+  transform: translateY(1em) !important;
 }
 
 .transition-approximate-up-leave-to {
   opacity: 0 !important;
-  transform: translateY(-30px) !important;
+  transform: translateY(-1em) !important;
 }
 </style>

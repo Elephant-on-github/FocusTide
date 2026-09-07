@@ -7,7 +7,7 @@ import OnboardingPage from './onboardingPage.vue'
 <template>
   <OnboardingPage>
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.3.heading')">
-      <IconInfoCircle :size="42" />
+      <IconInfoCircle class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <div class="text-center" v-text="$t('tutorials.onboarding.pages.3.text')" />

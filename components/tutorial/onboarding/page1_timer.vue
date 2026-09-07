@@ -11,7 +11,7 @@ const settingsStore = useSettings()
 <template>
   <OnboardingPage>
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.1.heading')">
-      <IconClockPlay :size="42" />
+      <IconClockPlay class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <div class="text-center -mt-3 mb-4" v-text="$t('tutorials.onboarding.pages.1.text')" />

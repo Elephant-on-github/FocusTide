@@ -46,11 +46,11 @@ const timerValue = computed(() => {
 
 .transition-percentage-enter {
   opacity: 0 !important;
-  transform: translateY(60px);
+  transform: translateY(1.5em);
 }
 
 .transition-percentage-leave-to {
   opacity: 0 !important;
-  transform: translateY(-60px);
+  transform: translateY(-1.5em);
 }
 </style>

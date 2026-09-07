@@ -11,14 +11,14 @@ const settingsStore = useSettings()
 <template>
   <OnboardingPage>
     <div class="py-3 flex gap-2 text-3xl flex-col md:flex-row justify-center items-center">
-      <img width="40" height="40" class="w-10" src="/favicon.svg" role="note">
+      <img class="w-10 h-10" src="/favicon.svg" role="note">
       <span v-text="$t('tutorials.onboarding.pages.0.title')" />
     </div>
 
     <div class="text-center -mt-3 mb-4" v-text="$t('tutorials.onboarding.pages.0.onboarding_invite')" />
 
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.0.heading')">
-      <IconLanguage :size="42" />
+      <IconLanguage class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <OptionGroup

@@ -181,7 +181,7 @@ const progressBarSchedules = computed(() => {
 
 .schedule-transition-enter,
 .schedule-transition-leave-to {
-  transform: translateY(-20px);
+  transform: translateY(-1.25em);
   opacity: 0;
 }
 

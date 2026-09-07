@@ -109,8 +109,8 @@ const handleEdit = (newValue: string) => {
   >
     <div :class="['absolute left-0 top-0 h-full self-stretch bg-themed transition-all duration-75 text-white flex flex-row items-center flex-shrink-0 cursor-move', showReorder ? 'w-6' : 'w-0']">
       <span v-show="showReorder">
-        <IconPencil v-if="props.manage && state.editing" size="16" />
-        <IconMenu v-else size="16" />
+        <IconPencil v-if="props.manage && state.editing" class="w-4 h-4" />
+        <IconMenu v-else class="w-4 h-4" />
       </span>
     </div>
     <div class="flex flex-col flex-grow w-full min-w-0 py-2 -my-2 transition-all duration-75 select-none mr-7" :class="[showReorder ? 'translate-x-6' : 'translate-x-0']" @click="state.editing = true">
@@ -139,7 +139,7 @@ const handleEdit = (newValue: string) => {
           bg-class="ring-themed bg-themed"
           @click="emit('delete')"
         >
-          <IconTrash size="18" />
+          <IconTrash class="w-[1.125rem] h-[1.125rem]" />
         </Button>
       </transition>
       <input v-model="checked" type="checkbox" class="w-6 h-6 mr-1 rounded accent-themed text-themed dark:text-themed md:w-5 md:h-5">

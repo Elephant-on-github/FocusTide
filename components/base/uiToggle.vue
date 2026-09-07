@@ -36,14 +36,14 @@ const computedValue = computed({
       <!-- ON component -->
       <div class="transition" :class="[{ 'opacity-0': !props.value }]">
         <slot name="when-on">
-          <IconCheck size="18" class="opacity-80" />
+          <IconCheck class="w-[1.125rem] h-[1.125rem] opacity-80" />
         </slot>
       </div>
 
       <!-- OFF component -->
       <div class="transition" :class="[{ 'opacity-0': !!props.value }]">
         <slot name="when-off">
-          <IconX size="18" class="opacity-80" />
+          <IconX class="w-[1.125rem] h-[1.125rem] opacity-80" />
         </slot>
       </div>
     </div>

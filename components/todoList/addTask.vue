@@ -70,7 +70,7 @@ const checkEnter = (event: KeyboardEvent) => {
       :disabled="!data.valid"
       @click="addTask"
     >
-      <IconCornerDownLeft :stroke-width="2" class="relative" size="24" />
+      <IconCornerDownLeft :stroke-width="2" class="relative w-6 h-6" />
     </Button>
   </div>
 </template>

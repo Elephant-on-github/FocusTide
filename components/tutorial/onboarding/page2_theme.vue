@@ -14,13 +14,13 @@ const currentTimer = computed(() => settingsStore.currentTimer as string)
 <template>
   <OnboardingPage>
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.2.theme.heading')">
-      <IconBrightnessDown :size="42" />
+      <IconBrightnessDown class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <OptionGroup :value="currentTheme" :choices="{ 'light': 'Light', 'dark': 'Dark' }" translation-key="tutorials.onboarding.pages.2.theme.options" class="w-full" @input="(newValue) => settingsStore.visuals.darkMode = (newValue === 'dark')" />
 
     <OnboardingHeader :text="$t('tutorials.onboarding.pages.2.display.heading')">
-      <IconDeviceWatch :size="42" />
+      <IconDeviceWatch class="w-[2.625rem] h-[2.625rem]" />
     </OnboardingHeader>
 
     <OptionGroup :value="currentTimer" :choices="{ 'traditional': 'Traditional', 'approximate': 'Approximate', 'percentage': 'Percentage' }" translation-key="settings.values.currentTimer" class="w-full" @input="(newValue) => settingsStore.currentTimer = newValue as TimerType" />
